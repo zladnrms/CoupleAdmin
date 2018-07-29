@@ -4,9 +4,20 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import io.defy.www.coupleadmin.R
+import io.defy.www.coupleadmin.receiver.MultiReceiver
 import kotlinx.android.synthetic.main.activity_main.*
+import android.content.IntentFilter
+import android.util.Log
+import io.defy.www.coupleadmin.service.NeverdieService
+
 
 class MainActivity : AppCompatActivity() {
+
+    /*
+        메뉴 선택과 필수 서비스들의 초기화를 담당한다
+     */
+
+    private val receiver : MultiReceiver = MultiReceiver()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,5 +32,31 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, MapActivity::class.java)
             startActivity(intent)
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        initService()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        unregisterReceiver(receiver)
+
+    }
+
+    fun initService() {
+        val intent = Intent(this, NeverdieService::class.java)
+
+        val intentFilter = IntentFilter(Intent.ACTION_SCREEN_ON)
+        intentFilter.addAction(Intent.ACTION_SCREEN_OFF)
+        intentFilter.addAction(Intent.ACTION_BOOT_COMPLETED)
+        intentFilter.addAction("android.provider.Telephony.SMS_RECEIVED")
+        intentFilter.addAction("io.defy.www.coupleadmin.service.NeverdieService")
+
+        registerReceiver(receiver, intentFilter)
+        startService(intent)
+
+        Log.d("onCreate()", "브로드캐스트리시버 등록됨")
     }
 }

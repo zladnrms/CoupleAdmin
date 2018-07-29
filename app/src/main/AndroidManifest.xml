@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.defy.www.coupleadmin">
 
+    <!-- 단말기 켜졌는지 감지 -->
+    <uses-permission android:name="android.permission.BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- SMS 수신 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!-- 전화 목록 -->
     <uses-permission android:name="android.permission.READ_CALL_LOG" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
@@ -47,7 +56,25 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyArix-TUxRcr9w3md-KMACYRRarmgUdhag" />
 
-        <activity android:name=".view.MapActivity"></activity>
+        <activity android:name=".view.MapActivity" />
+
+        <service
+            android:name=".service.NeverdieService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="NeverdieService"
+            android:process=":remote">
+        <intent-filter>
+            <action android:name="ACTION.RESTART.PersistentService" />
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+        </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".receiver.MultiReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote" />
     </application>
 
 </manifest>

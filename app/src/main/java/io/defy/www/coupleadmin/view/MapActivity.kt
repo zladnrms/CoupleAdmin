@@ -52,6 +52,9 @@ class MapActivity : AppCompatActivity(), MapContract.View, OnMapReadyCallback, G
     private var LikelyAttributions = emptyArray<String>()
     private var LikelyLatLngs = emptyArray<LatLng>()
 
+    /* 위치 정보 확인 변수 */
+    var lm : LocationManager? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
@@ -68,18 +71,40 @@ class MapActivity : AppCompatActivity(), MapContract.View, OnMapReadyCallback, G
                 .addApi(Places.PLACE_DETECTION_API)
                 .build()
         mGApiClient?.connect()
+
+        btnRefresh.setOnClickListener {
+            lm?.let {
+                try {
+                    tvLocation.setText("수신중..")
+                    // GPS 제공자의 정보가 바뀌면 콜백하도록 리스너 등록하기~!!!
+                    it.requestLocationUpdates(LocationManager.GPS_PROVIDER, // 등록할 위치제공자
+                            100L, // 통지사이의 최소 시간간격 (miliSecond)
+                            1F, // 통지사이의 최소 변경거리 (m)
+                            mLocationListener)
+                    it.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, // 등록할 위치제공자
+                            100L, // 통지사이의 최소 시간간격 (miliSecond)
+                            1F, // 통지사이의 최소 변경거리 (m)
+                            mLocationListener)
+                } catch (ex: SecurityException) {
+                }
+            }
+        }
     }
 
     override fun onResume() {
         super.onResume()
 
-        isEnabledProvider()
-        getLocation()
+        lm = getSystemService(Context.LOCATION_SERVICE) as LocationManager
 
+        isEnabledProvider()
+
+        btnRefresh.performClick()
     }
 
     override fun onStop() {
         super.onStop()
+
+        lm?.removeUpdates(mLocationListener)  //  미수신할때는 반드시 자원해체를 해주어야 한다.
 
         if (mGApiClient != null)
             mGApiClient?.disconnect()
@@ -103,31 +128,6 @@ class MapActivity : AppCompatActivity(), MapContract.View, OnMapReadyCallback, G
         tvWifi.text = list[2] + " : " + lm.isProviderEnabled(list[2]);
     }
 
-    fun getLocation() {
-        val lm = getSystemService(Context.LOCATION_SERVICE) as LocationManager
-
-        btnToggle.setOnClickListener {
-            try {
-                if (btnToggle.isChecked()) {
-                    tvLocation.setText("수신중..")
-                    // GPS 제공자의 정보가 바뀌면 콜백하도록 리스너 등록하기~!!!
-                    lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, // 등록할 위치제공자
-                            100L, // 통지사이의 최소 시간간격 (miliSecond)
-                            1F, // 통지사이의 최소 변경거리 (m)
-                            mLocationListener)
-                    lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, // 등록할 위치제공자
-                            100L, // 통지사이의 최소 시간간격 (miliSecond)
-                            1F, // 통지사이의 최소 변경거리 (m)
-                            mLocationListener)
-                } else {
-                    tvLocation.setText("위치정보 미수신중")
-                    lm.removeUpdates(mLocationListener)  //  미수신할때는 반드시 자원해체를 해주어야 한다.
-                }
-            } catch (ex: SecurityException) {
-            }
-        }
-    }
-
     private val mLocationListener: LocationListener = object : LocationListener {
         override fun onLocationChanged(location: Location) {
             val longitude = location.getLongitude(); //경도
@@ -146,7 +146,7 @@ class MapActivity : AppCompatActivity(), MapContract.View, OnMapReadyCallback, G
             mGMap?.addMarker(markerOptions)
 
             mGMap?.moveCamera(CameraUpdateFactory.newLatLng(SEOUL))
-            mGMap?.animateCamera(CameraUpdateFactory.zoomTo(17F))
+            mGMap?.animateCamera(CameraUpdateFactory.zoomTo(19F))
         }
         override fun onStatusChanged(provider: String, status: Int, extras: Bundle) {
             Log.d("test", "onStatusChanged, provider:" + provider + ", status:" + status + " ,Bundle:" + extras);
