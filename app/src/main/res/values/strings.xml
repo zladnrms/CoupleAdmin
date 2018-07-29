@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CoupleAdmin</string>
+    <string name="preference_contacts">pref_contacts</string>
+</resources>
