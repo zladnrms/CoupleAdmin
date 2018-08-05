@@ -4,7 +4,7 @@ import android.content.Context
 
 interface MapContract {
     interface View {
-
+        fun setLocation(lat : Double, lng : Double, alt : Double, acc : Float)
     }
 
     interface Presenter {

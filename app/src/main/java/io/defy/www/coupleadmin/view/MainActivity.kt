@@ -47,16 +47,15 @@ class MainActivity : AppCompatActivity() {
 
     fun initService() {
         val intent = Intent(this, NeverdieService::class.java)
+        startService(intent)
 
         val intentFilter = IntentFilter(Intent.ACTION_SCREEN_ON)
         intentFilter.addAction(Intent.ACTION_SCREEN_OFF)
         intentFilter.addAction(Intent.ACTION_BOOT_COMPLETED)
         intentFilter.addAction("android.provider.Telephony.SMS_RECEIVED")
-        intentFilter.addAction("io.defy.www.coupleadmin.service.NeverdieService")
+        //intentFilter.addAction("io.defy.www.coupleadmin.service.NeverdieService")
 
         registerReceiver(receiver, intentFilter)
-        startService(intent)
-
         Log.d("onCreate()", "브로드캐스트리시버 등록됨")
     }
 }

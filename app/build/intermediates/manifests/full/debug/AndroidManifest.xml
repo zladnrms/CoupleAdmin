@@ -5,8 +5,11 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="21"
+        android:minSdkVersion="23"
         android:targetSdkVersion="27" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <!-- 단말기 켜졌는지 감지 -->
     <uses-permission android:name="android.permission.BOOT_COMPLETED" />
@@ -35,10 +38,6 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <permission android:name="android.permission.STATUS_BAR_SERVICE" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -74,19 +73,24 @@
             android:name="io.defy.www.coupleadmin.service.NeverdieService"
             android:enabled="true"
             android:exported="false"
-            android:label="NeverdieService"
-            android:process=":remote" >
-            <intent-filter>
-                <action android:name="ACTION.RESTART.PersistentService" />
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
+            android:label="NeverdieService" >
+
+            <!--
+        <intent-filter>
+            <action android:name="ACTION.RESTART.PersistentService" />
+        </intent-filter>
+            -->
         </service>
 
         <receiver
             android:name="io.defy.www.coupleadmin.receiver.MultiReceiver"
             android:enabled="true"
             android:exported="false"
-            android:process=":remote" />
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"

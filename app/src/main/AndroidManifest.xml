@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.defy.www.coupleadmin">
 
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <!-- 단말기 켜졌는지 감지 -->
     <uses-permission android:name="android.permission.BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_SERVICE" />
@@ -29,10 +33,6 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <permission android:name="android.permission.STATUS_BAR_SERVICE" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:name=".GlobalApplication"
@@ -62,19 +62,22 @@
             android:name=".service.NeverdieService"
             android:enabled="true"
             android:exported="false"
-            android:label="NeverdieService"
-            android:process=":remote">
+            android:label="NeverdieService">
+            <!--
         <intent-filter>
             <action android:name="ACTION.RESTART.PersistentService" />
-            <action android:name="android.intent.action.BOOT_COMPLETED" />
-        </intent-filter>
+        </intent-filter>-->
         </service>
 
         <receiver
             android:name=".receiver.MultiReceiver"
             android:enabled="true"
             android:exported="false"
-            android:process=":remote" />
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
