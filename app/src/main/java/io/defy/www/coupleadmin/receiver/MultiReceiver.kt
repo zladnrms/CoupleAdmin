@@ -8,22 +8,32 @@ import android.os.Bundle
 import android.telephony.SmsMessage
 import io.defy.www.coupleadmin.service.NeverdieService
 import java.util.*
+import android.support.v4.content.ContextCompat.startForegroundService
+import android.os.Build
+
 
 
 class MultiReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
-        when(intent.action)
-        {
+        when (intent.action) {
             Intent.ACTION_BOOT_COMPLETED -> {
                 Log.d("onReceive()", "부팅완료")
                 val i = Intent(context, NeverdieService::class.java)
-                context.startService(i)
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    context.startForegroundService(i)
+                } else {
+                    context.startService(i)
+                }
             }
             "ACTION.RESTART.PersistentService" -> {
                 Log.d("onReceive()", "ACTION.RESTART.PersistentService")
                 val i = Intent(context, NeverdieService::class.java)
-                context.startService(i)
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    context.startForegroundService(i)
+                } else {
+                    context.startService(i)
+                }
             }
             Intent.ACTION_SCREEN_ON -> {
                 Log.d("onReceive()", "스크린 ON")
@@ -38,7 +48,7 @@ class MultiReceiver : BroadcastReceiver() {
         }
     }
 
-    fun analysisSMS(intent : Intent) {
+    fun analysisSMS(intent: Intent) {
         // SMS 메시지를 파싱합니다.
         val bundle = intent.extras
         val messages = bundle.get("pdus") as Array<Any>

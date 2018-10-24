@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\kim\\AndroidStudioProjects\\CoupleAdmin\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
+            "outputFile": "C:\\Users\\zladn\\StudioProjects\\CoupleAdmin\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kim\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\24c3f3be5985a8700319e3ceeb70a0ff\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\zladn\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\861759eff4485429f62e220a94c2d021\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kim\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d11148bba8d97ca33dfa1618572e8bf6\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\zladn\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d3e9fd8d9d1ee78ea039119e8c493487\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

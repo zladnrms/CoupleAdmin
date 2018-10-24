@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.util.Log
+import android.widget.Toast
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.api.GoogleApiClient
 import com.google.android.gms.common.api.PendingResult
@@ -108,6 +109,21 @@ class MapActivity : AppCompatActivity(), MapContract.View, OnMapReadyCallback, G
 
         if (mGApiClient != null)
             mGApiClient?.disconnect()
+    }
+
+    override fun setLocation(lat : Double, lng : Double, alt : Double, acc : Float) {
+        Toast.makeText(this, "위치가 업데이트 되었습니다", Toast.LENGTH_SHORT)
+
+        val place = LatLng(lat, lng)
+
+        val markerOptions = MarkerOptions()
+        markerOptions.position(place)
+        markerOptions.title("위치")
+        markerOptions.snippet("위치 설명")
+        mGMap?.addMarker(markerOptions)
+
+        mGMap?.moveCamera(CameraUpdateFactory.newLatLng(place))
+        mGMap?.animateCamera(CameraUpdateFactory.zoomTo(19F))
     }
 
     fun isEnabledProvider() {

@@ -25,15 +25,17 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
 
     private static final Set<Class<? extends RealmModel>> MODEL_CLASSES;
     static {
-        Set<Class<? extends RealmModel>> modelClasses = new HashSet<Class<? extends RealmModel>>(1);
+        Set<Class<? extends RealmModel>> modelClasses = new HashSet<Class<? extends RealmModel>>(2);
         modelClasses.add(io.defy.www.coupleadmin.model.data.ContactsData.class);
+        modelClasses.add(io.defy.www.coupleadmin.model.data.LocationData.class);
         MODEL_CLASSES = Collections.unmodifiableSet(modelClasses);
     }
 
     @Override
     public Map<Class<? extends RealmModel>, OsObjectSchemaInfo> getExpectedObjectSchemaInfoMap() {
-        Map<Class<? extends RealmModel>, OsObjectSchemaInfo> infoMap = new HashMap<Class<? extends RealmModel>, OsObjectSchemaInfo>(1);
+        Map<Class<? extends RealmModel>, OsObjectSchemaInfo> infoMap = new HashMap<Class<? extends RealmModel>, OsObjectSchemaInfo>(2);
         infoMap.put(io.defy.www.coupleadmin.model.data.ContactsData.class, io.realm.io_defy_www_coupleadmin_model_data_ContactsDataRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(io.defy.www.coupleadmin.model.data.LocationData.class, io.realm.io_defy_www_coupleadmin_model_data_LocationDataRealmProxy.getExpectedObjectSchemaInfo());
         return infoMap;
     }
 
@@ -44,6 +46,9 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(io.defy.www.coupleadmin.model.data.ContactsData.class)) {
             return io.realm.io_defy_www_coupleadmin_model_data_ContactsDataRealmProxy.createColumnInfo(schemaInfo);
         }
+        if (clazz.equals(io.defy.www.coupleadmin.model.data.LocationData.class)) {
+            return io.realm.io_defy_www_coupleadmin_model_data_LocationDataRealmProxy.createColumnInfo(schemaInfo);
+        }
         throw getMissingProxyClassException(clazz);
     }
 
@@ -53,6 +58,9 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
 
         if (clazz.equals(io.defy.www.coupleadmin.model.data.ContactsData.class)) {
             return "ContactsData";
+        }
+        if (clazz.equals(io.defy.www.coupleadmin.model.data.LocationData.class)) {
+            return "LocationData";
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -66,6 +74,9 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
 
             if (clazz.equals(io.defy.www.coupleadmin.model.data.ContactsData.class)) {
                 return clazz.cast(new io.realm.io_defy_www_coupleadmin_model_data_ContactsDataRealmProxy());
+            }
+            if (clazz.equals(io.defy.www.coupleadmin.model.data.LocationData.class)) {
+                return clazz.cast(new io.realm.io_defy_www_coupleadmin_model_data_LocationDataRealmProxy());
             }
             throw getMissingProxyClassException(clazz);
         } finally {
@@ -87,6 +98,9 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(io.defy.www.coupleadmin.model.data.ContactsData.class)) {
             return clazz.cast(io.realm.io_defy_www_coupleadmin_model_data_ContactsDataRealmProxy.copyOrUpdate(realm, (io.defy.www.coupleadmin.model.data.ContactsData) obj, update, cache));
         }
+        if (clazz.equals(io.defy.www.coupleadmin.model.data.LocationData.class)) {
+            return clazz.cast(io.realm.io_defy_www_coupleadmin_model_data_LocationDataRealmProxy.copyOrUpdate(realm, (io.defy.www.coupleadmin.model.data.LocationData) obj, update, cache));
+        }
         throw getMissingProxyClassException(clazz);
     }
 
@@ -98,6 +112,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
 
         if (clazz.equals(io.defy.www.coupleadmin.model.data.ContactsData.class)) {
             io.realm.io_defy_www_coupleadmin_model_data_ContactsDataRealmProxy.insert(realm, (io.defy.www.coupleadmin.model.data.ContactsData) object, cache);
+        } else if (clazz.equals(io.defy.www.coupleadmin.model.data.LocationData.class)) {
+            io.realm.io_defy_www_coupleadmin_model_data_LocationDataRealmProxy.insert(realm, (io.defy.www.coupleadmin.model.data.LocationData) object, cache);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -117,12 +133,16 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
 
             if (clazz.equals(io.defy.www.coupleadmin.model.data.ContactsData.class)) {
                 io.realm.io_defy_www_coupleadmin_model_data_ContactsDataRealmProxy.insert(realm, (io.defy.www.coupleadmin.model.data.ContactsData) object, cache);
+            } else if (clazz.equals(io.defy.www.coupleadmin.model.data.LocationData.class)) {
+                io.realm.io_defy_www_coupleadmin_model_data_LocationDataRealmProxy.insert(realm, (io.defy.www.coupleadmin.model.data.LocationData) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
             if (iterator.hasNext()) {
                 if (clazz.equals(io.defy.www.coupleadmin.model.data.ContactsData.class)) {
                     io.realm.io_defy_www_coupleadmin_model_data_ContactsDataRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(io.defy.www.coupleadmin.model.data.LocationData.class)) {
+                    io.realm.io_defy_www_coupleadmin_model_data_LocationDataRealmProxy.insert(realm, iterator, cache);
                 } else {
                     throw getMissingProxyClassException(clazz);
                 }
@@ -138,6 +158,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
 
         if (clazz.equals(io.defy.www.coupleadmin.model.data.ContactsData.class)) {
             io.realm.io_defy_www_coupleadmin_model_data_ContactsDataRealmProxy.insertOrUpdate(realm, (io.defy.www.coupleadmin.model.data.ContactsData) obj, cache);
+        } else if (clazz.equals(io.defy.www.coupleadmin.model.data.LocationData.class)) {
+            io.realm.io_defy_www_coupleadmin_model_data_LocationDataRealmProxy.insertOrUpdate(realm, (io.defy.www.coupleadmin.model.data.LocationData) obj, cache);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -157,12 +179,16 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
 
             if (clazz.equals(io.defy.www.coupleadmin.model.data.ContactsData.class)) {
                 io.realm.io_defy_www_coupleadmin_model_data_ContactsDataRealmProxy.insertOrUpdate(realm, (io.defy.www.coupleadmin.model.data.ContactsData) object, cache);
+            } else if (clazz.equals(io.defy.www.coupleadmin.model.data.LocationData.class)) {
+                io.realm.io_defy_www_coupleadmin_model_data_LocationDataRealmProxy.insertOrUpdate(realm, (io.defy.www.coupleadmin.model.data.LocationData) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
             if (iterator.hasNext()) {
                 if (clazz.equals(io.defy.www.coupleadmin.model.data.ContactsData.class)) {
                     io.realm.io_defy_www_coupleadmin_model_data_ContactsDataRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(io.defy.www.coupleadmin.model.data.LocationData.class)) {
+                    io.realm.io_defy_www_coupleadmin_model_data_LocationDataRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else {
                     throw getMissingProxyClassException(clazz);
                 }
@@ -178,6 +204,9 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(io.defy.www.coupleadmin.model.data.ContactsData.class)) {
             return clazz.cast(io.realm.io_defy_www_coupleadmin_model_data_ContactsDataRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
+        if (clazz.equals(io.defy.www.coupleadmin.model.data.LocationData.class)) {
+            return clazz.cast(io.realm.io_defy_www_coupleadmin_model_data_LocationDataRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        }
         throw getMissingProxyClassException(clazz);
     }
 
@@ -188,6 +217,9 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
 
         if (clazz.equals(io.defy.www.coupleadmin.model.data.ContactsData.class)) {
             return clazz.cast(io.realm.io_defy_www_coupleadmin_model_data_ContactsDataRealmProxy.createUsingJsonStream(realm, reader));
+        }
+        if (clazz.equals(io.defy.www.coupleadmin.model.data.LocationData.class)) {
+            return clazz.cast(io.realm.io_defy_www_coupleadmin_model_data_LocationDataRealmProxy.createUsingJsonStream(realm, reader));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -200,6 +232,9 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
 
         if (clazz.equals(io.defy.www.coupleadmin.model.data.ContactsData.class)) {
             return clazz.cast(io.realm.io_defy_www_coupleadmin_model_data_ContactsDataRealmProxy.createDetachedCopy((io.defy.www.coupleadmin.model.data.ContactsData) realmObject, 0, maxDepth, cache));
+        }
+        if (clazz.equals(io.defy.www.coupleadmin.model.data.LocationData.class)) {
+            return clazz.cast(io.realm.io_defy_www_coupleadmin_model_data_LocationDataRealmProxy.createDetachedCopy((io.defy.www.coupleadmin.model.data.LocationData) realmObject, 0, maxDepth, cache));
         }
         throw getMissingProxyClassException(clazz);
     }
