@@ -1,5 +1,7 @@
 package io.defy.www.coupleadmin.model.data;
 
+import org.jetbrains.annotations.Nullable;
+
 import java.util.Date;
 
 import io.realm.RealmObject;
@@ -11,39 +13,40 @@ public class ContactsData extends RealmObject { // 스트리밍 방  정보 클�
     @PrimaryKey
     private int _id;
 
-    private int id;
+    private int type;
 
-    @Required
     private String phone_number;
 
     private String display_name;
+
+    private int duration;
 
     private String email;
 
     private String photo_id;
 
-    @Required
     private Date date;
 
     public ContactsData() {
 
     }
 
-    public ContactsData(int id, String phone_number, String display_name, String email, String photo_id, Date date) {
-        this.id = id;
+    public ContactsData(int type, String phone_number, String display_name, int duration, String email, String photo_id, Date date) {
+        this.type = type;
         this.phone_number = phone_number;
         this.display_name = display_name;
+        this.duration = duration;
         this.email = email;
         this.photo_id = photo_id;
         this.date = date;
     }
 
-    public int getId() {
-        return id;
+    public int getType() {
+        return type;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setType(int type) {
+        this.type = type;
     }
 
     public String getPhone_number() {
@@ -60,6 +63,14 @@ public class ContactsData extends RealmObject { // 스트리밍 방  정보 클�
 
     public void setDisplay_name(String display_name) {
         this.display_name = display_name;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
     }
 
     public String getEmail() {

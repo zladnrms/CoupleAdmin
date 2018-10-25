@@ -33,18 +33,17 @@ class NeverdieService : Service() {
         ApiInterface.create()
     }
 
-    private var contactsRepo: ContactsDataRepositoryModel? = null
-    private var locationRepo: LocationDataRepositoryModel? = null
-
     val lm by lazy {
         getSystemService(Context.LOCATION_SERVICE) as LocationManager
     }
 
-    private var mainThread: Thread? = null
-
     companion object {
         var serviceIntent: Intent? = null
     }
+
+    private var contactsRepo: ContactsDataRepositoryModel? = null
+    private var locationRepo: LocationDataRepositoryModel? = null
+    private var mainThread: Thread? = null
 
     override fun onCreate() {
         super.onCreate()
@@ -80,6 +79,7 @@ class NeverdieService : Service() {
         locationRepo = LocationDataRepository.getInstance()
 
         serviceIntent = intent
+        /*
         showToast(application, "Start Service")
 
         mainThread = Thread(Runnable {
@@ -92,6 +92,7 @@ class NeverdieService : Service() {
                     val date = Date()
                     showToast(application, sdf.format(date) + " : " + a)
                     a++
+                    nowLocationToServer()
                 } catch (e: InterruptedException) {
                     run = false
                     e.printStackTrace()
@@ -100,7 +101,7 @@ class NeverdieService : Service() {
             }
         })
         mainThread?.start()
-
+*/
         return Service.START_NOT_STICKY
     }
 
@@ -119,24 +120,6 @@ class NeverdieService : Service() {
             mainThread = null
         }
     }
-
-
-    /*
-    inner class ServiceStart : Runnable {
-
-        override fun run() {
-            // do something..
-            var a = 1000;
-            while (a > 0) {
-                Log.d("NeverDieService", "ServiceStart..");
-                Thread.sleep(5000);
-                a--;
-
-                nowLocationToServer()
-            }
-
-        }
-    }*/
 
     private fun compareLocation(latitude : Double, longitude : Double, altitude : Double, accuracy : Float) {
         val recentLocation = locationRepo?.select()

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-103:12
-INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-103:12
-INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-103:12
-INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-103:12
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-105:12
+INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-105:12
+INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-105:12
+INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-105:12
 MERGED from [io.realm:realm-android-library:5.0.0] C:\Users\zladn\.gradle\caches\transforms-1\files-1.1\realm-android-library-5.0.0.aar\ba1761f83d22a1bcf95be7963bbf1d2c\AndroidManifest.xml:2:1-10:12
 MERGED from [io.realm:realm-android-kotlin-extensions:5.0.0] C:\Users\zladn\.gradle\caches\transforms-1\files-1.1\realm-android-kotlin-extensions-5.0.0.aar\d1f2703aaeda400de84853130fd005fa\AndroidManifest.xml:2:1-10:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\zladn\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\565280c699026201367c8358cab9d4e7\AndroidManifest.xml:17:1-22:12
@@ -36,20 +36,20 @@ MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\zladn\.gradle\caches
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\zladn\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\0bcdeac4d4d633038ff997c7d30261ac\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\zladn\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\bed24b636d7b0f2acbdb1e4538b4eaf2\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\zladn\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a14b31c11641c1f55784526f223c79a8\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-103:12
-INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-103:12
-INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-103:12
+INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-105:12
+INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-105:12
+INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-105:12
 	package
 		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-103:12
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-105:12
 		INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-103:12
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:1-105:12
 		INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:2:11-69
@@ -58,79 +58,79 @@ ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifes
 	android:name
 		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:6:22-74
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:7:5-81
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:9:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:8:5-79
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:8:22-76
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:10:22-76
 uses-permission#android.permission.BOOT_COMPLETED
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:11:5-73
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:13:5-73
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:11:22-70
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:13:22-70
 uses-permission#android.permission.ACCESS_BACKGROUND_SERVICE
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:12:5-84
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:14:5-84
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:12:22-81
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:14:22-81
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:13:5-81
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:15:5-81
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:13:22-78
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:15:22-78
 uses-permission#android.permission.RECEIVE_SMS
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:16:5-70
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:18:5-70
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:16:22-67
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:18:22-67
 uses-permission#android.permission.READ_CALL_LOG
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:19:5-72
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:21:5-72
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:19:22-69
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:21:22-69
 uses-permission#android.permission.READ_CONTACTS
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:20:5-72
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:22:5-72
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:20:22-69
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:22:22-69
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:23:5-81
-	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:23:22-78
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:24:5-80
-	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:24:22-77
-uses-permission#android.permission.WRITE_INTERNAL_STORAGE
 ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:25:5-81
 	android:name
 		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:25:22-78
-uses-permission#android.permission.READ_INTERNAL_STORAGE
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:26:5-80
 	android:name
 		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:26:22-77
+uses-permission#android.permission.WRITE_INTERNAL_STORAGE
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:27:5-81
+	android:name
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:27:22-78
+uses-permission#android.permission.READ_INTERNAL_STORAGE
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:28:5-80
+	android:name
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:28:22-77
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:29:5-67
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:31:5-67
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\zladn\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\40c1809e0ffb882f6cc8503f554906e2\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\zladn\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\40c1809e0ffb882f6cc8503f554906e2\AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:29:22-64
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:31:22-64
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:30:5-76
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:32:5-76
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:30:22-73
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:32:22-73
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:31:5-79
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:33:5-79
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\zladn\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\40c1809e0ffb882f6cc8503f554906e2\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\zladn\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\40c1809e0ffb882f6cc8503f554906e2\AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:31:22-76
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:33:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:34:5-68
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:36:5-68
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:34:22-65
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:36:22-65
 permission#android.permission.STATUS_BAR_SERVICE
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:36:5-72
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:38:5-72
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:36:17-69
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:38:17-69
 application
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:38:5-101:19
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:40:5-103:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\zladn\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\0eb264f5cce2e3c7858d844a3b241023\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\zladn\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\0eb264f5cce2e3c7858d844a3b241023\AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\zladn\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\7d749b4fce7b1a74b602cbe117eeb92e\AndroidManifest.xml:11:5-20
@@ -154,99 +154,99 @@ MERGED from [com.jakewharton.timber:timber:4.7.0] C:\Users\zladn\.gradle\caches\
 MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\zladn\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\ca101df91c97c13e289ccf4c688ff150\AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\zladn\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\ca101df91c97c13e289ccf4c688ff150\AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:44:9-35
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:46:9-35
 	android:label
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:42:9-41
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:44:9-41
 	android:roundIcon
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:43:9-54
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:45:9-54
 	android:icon
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:41:9-43
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:43:9-43
 	android:allowBackup
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:40:9-35
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:42:9-35
 	android:theme
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:45:9-40
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:47:9-40
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:39:9-42
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:41:9-42
 activity#io.defy.www.coupleadmin.view.PermissionActivity
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:46:9-52:20
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:48:9-54:20
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:46:19-58
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:48:19-58
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:47:13-51:29
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:49:13-53:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:48:17-69
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:50:17-69
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:48:25-66
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:50:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:50:17-77
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:52:17-77
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:50:27-74
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:52:27-74
 activity#io.defy.www.coupleadmin.view.ContactsActivity
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:53:9-59
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:55:9-59
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:53:19-56
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:55:19-56
 activity#io.defy.www.coupleadmin.view.MainActivity
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:54:9-55
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:56:9-55
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:54:19-52
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:56:19-52
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:56:9-58:71
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:58:9-60:71
 	android:value
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:58:13-68
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:60:13-68
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:57:13-58
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:59:13-58
 activity#io.defy.www.coupleadmin.view.MapActivity
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:60:9-54
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:62:9-54
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:60:19-51
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:62:19-51
 service#io.defy.www.coupleadmin.service.NeverdieService
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:62:9-71:19
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:64:9-73:19
 	android:enabled
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:64:13-35
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:66:13-35
 	android:label
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:66:13-44
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:68:13-44
 	android:exported
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:65:13-37
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:67:13-37
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:63:13-52
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:65:13-52
 receiver#io.defy.www.coupleadmin.receiver.MultiReceiver
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:73:9-81:20
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:75:9-83:20
 	android:enabled
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:75:13-35
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:77:13-35
 	android:exported
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:76:13-37
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:78:13-37
 	android:permission
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:77:13-75
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:79:13-75
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:74:13-51
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:76:13-51
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:78:13-80:29
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:80:13-82:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:79:17-79
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:81:17-79
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:79:25-76
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:81:25-76
 service#io.defy.www.coupleadmin.service.RestartService
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:83:9-86:39
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:85:9-88:39
 	android:enabled
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:85:13-35
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:87:13-35
 	android:exported
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:86:13-36
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:88:13-36
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:84:13-51
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:86:13-51
 receiver#io.defy.www.coupleadmin.receiver.AlarmRecever
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:88:9-58
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:90:9-58
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:88:19-56
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:90:19-56
 receiver#io.defy.www.coupleadmin.receiver.RebootRecever
-ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:90:9-98:20
+ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:92:9-100:20
 	android:process
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:94:13-38
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:96:13-38
 	android:enabled
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:92:13-35
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:94:13-35
 	android:exported
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:93:13-37
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:95:13-37
 	android:name
-		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:91:13-51
+		ADDED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml:93:13-51
 uses-sdk
 INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\zladn\StudioProjects\CoupleAdmin\app\src\main\AndroidManifest.xml

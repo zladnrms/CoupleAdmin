@@ -43,7 +43,7 @@ public class ContactsDataRepository implements ContactsDataRepositoryModel {
     }
 
     @Override
-    public void insert(@Nullable Integer id, @NotNull String phone_number, @Nullable String display_name, @Nullable String email, @Nullable Date date, @Nullable String photo_id) {
+    public void insert(@Nullable Integer type, @Nullable String phone_number, @Nullable String display_name, @Nullable Integer duration, @Nullable String email, @Nullable String photo_id, @Nullable Date date) {
         if (realm != null && !realm.isClosed()) {
         } else {
             realm = Realm.getDefaultInstance();
@@ -57,9 +57,11 @@ public class ContactsDataRepository implements ContactsDataRepositoryModel {
 
             // User object created with the new Primary key
             ContactsData data = realm.createObject(ContactsData.class, nextId);
-            data.setId(id);
+            data.setType(type);
             data.setEmail(email);
             data.setPhone_number(phone_number);
+            data.setDisplay_name(display_name);
+            data.setDuration(duration);
             data.setPhoto_id(photo_id);
             data.setDate(date);
             data.setEmail(email);

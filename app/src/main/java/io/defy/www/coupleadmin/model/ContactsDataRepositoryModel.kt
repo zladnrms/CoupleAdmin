@@ -4,7 +4,7 @@ import io.defy.www.coupleadmin.model.data.ContactsData
 import java.util.*
 
 interface ContactsDataRepositoryModel {
-    fun insert(id : Int?, phone_number : String, display_name : String?, email : String?, date : Date?, photo_id : String?)
+    fun insert(type : Int?, phone_number : String?, display_name : String?, duration : Int?, email : String?, photo_id : String?, date : Date?)
 
     fun select() : ContactsData
 

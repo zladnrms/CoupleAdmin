@@ -40,4 +40,8 @@ class ContactsActivity : AppCompatActivity(), ContactsContract.View {
         super.onResume()
         presenter?.getCallLog(baseContext)
     }
+
+    override fun add(data : ContactsData) {
+        adapter?.add(data)
+    }
 }

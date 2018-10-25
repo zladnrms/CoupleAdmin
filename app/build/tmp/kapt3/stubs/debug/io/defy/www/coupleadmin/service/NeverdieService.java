@@ -6,10 +6,10 @@ import java.lang.System;
 public final class NeverdieService extends android.app.Service {
     @org.jetbrains.annotations.NotNull()
     private final kotlin.Lazy retrofitClient$delegate = null;
-    private com.zeniex.www.zeniexautomarketing.model.ContactsDataRepositoryModel contactsRepo;
-    private com.zeniex.www.zeniexautomarketing.model.LocationDataRepositoryModel locationRepo;
     @org.jetbrains.annotations.NotNull()
     private final kotlin.Lazy lm$delegate = null;
+    private com.zeniex.www.zeniexautomarketing.model.ContactsDataRepositoryModel contactsRepo;
+    private com.zeniex.www.zeniexautomarketing.model.LocationDataRepositoryModel locationRepo;
     private java.lang.Thread mainThread;
     private final android.location.LocationListener mLocationListener = null;
     @org.jetbrains.annotations.Nullable()

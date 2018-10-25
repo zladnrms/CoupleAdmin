@@ -42,6 +42,9 @@ class ContactsListAdapter(var context: Context, var lists : ArrayList<ContactsDa
         }
         holder?.itemView?.tv_phoneNumber?.text = lists[position].phone_number
         holder?.itemView?.tv_nickname?.text = lists[position].display_name
+        holder?.itemView?.tv_date?.text = lists[position].date.toString()
+        holder?.itemView?.tv_type?.text = lists[position].type.toString()
+        holder?.itemView?.tv_duration?.text = lists[position].duration.toString()
 
         //holder?.itemView?.tv_date?.text = toSimpleString(lists[position].date)
     }
@@ -50,7 +53,7 @@ class ContactsListAdapter(var context: Context, var lists : ArrayList<ContactsDa
     class Item(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bindData(_list: String) {
-            //itemView.tv_category.text = _list
+            //itemView.tv_nickname.text = _list
         }
     }
 

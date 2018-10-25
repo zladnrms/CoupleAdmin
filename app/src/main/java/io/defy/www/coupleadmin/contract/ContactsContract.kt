@@ -1,10 +1,12 @@
 package io.defy.www.coupleadmin.contract
 
 import android.content.Context
+import io.defy.www.coupleadmin.model.data.ContactsData
+import java.util.*
 
 interface ContactsContract {
     interface View {
-
+        fun add(data : ContactsData)
     }
 
     interface Presenter {
@@ -15,5 +17,7 @@ interface ContactsContract {
         fun getCallLog(context : Context)
 
         fun timeToString(time : Long) : String
+
+        fun stringToDate(date : String) : Date
     }
 }

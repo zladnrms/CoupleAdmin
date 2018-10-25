@@ -1,4 +1,4 @@
-#Wed Oct 24 21:40:50 KST 2018
+#Wed Oct 24 23:42:55 KST 2018
 base.0=C\:\\Users\\zladn\\StudioProjects\\CoupleAdmin\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\21
 path.0=classes.dex
 renamed.0=classes.dex
