@@ -10,10 +10,14 @@ import io.defy.www.coupleadmin.service.NeverdieService
 import java.util.*
 import android.support.v4.content.ContextCompat.startForegroundService
 import android.os.Build
-
+import android.telephony.TelephonyManager
 
 
 class MultiReceiver : BroadcastReceiver() {
+
+    companion object {
+        private var mLastState : String? = null
+    }
 
     override fun onReceive(context: Context, intent: Intent) {
         when (intent.action) {

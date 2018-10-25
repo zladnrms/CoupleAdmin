@@ -92,7 +92,7 @@ public final class R {
         public static final int standard = 0x7f0800b8;
         public static final int start = 0x7f0800b9;
         public static final int top = 0x7f0800cc;
-        public static final int wrap = 0x7f0800e3;
+        public static final int wrap = 0x7f0800e4;
     }
     public static final class styleable {
         private styleable() {}

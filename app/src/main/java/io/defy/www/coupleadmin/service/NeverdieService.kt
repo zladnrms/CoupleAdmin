@@ -39,6 +39,10 @@ class NeverdieService : Service() {
 
     companion object {
         var serviceIntent: Intent? = null
+
+        fun nowPhoneCallToServer(phoneNumber : String) {
+            Log.d("ㅇㅇ", phoneNumber)
+        }
     }
 
     private var contactsRepo: ContactsDataRepositoryModel? = null

@@ -25,13 +25,13 @@ public class ContactsData extends RealmObject { // 스트리밍 방  정보 클�
 
     private String photo_id;
 
-    private Date date;
+    private String date;
 
     public ContactsData() {
 
     }
 
-    public ContactsData(int type, String phone_number, String display_name, int duration, String email, String photo_id, Date date) {
+    public ContactsData(int type, String phone_number, String display_name, int duration, String email, String photo_id, String date) {
         this.type = type;
         this.phone_number = phone_number;
         this.display_name = display_name;
@@ -89,11 +89,11 @@ public class ContactsData extends RealmObject { // 스트리밍 방  정보 클�
         this.photo_id = photo_id;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 }

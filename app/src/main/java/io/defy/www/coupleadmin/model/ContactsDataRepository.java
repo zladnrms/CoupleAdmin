@@ -43,7 +43,7 @@ public class ContactsDataRepository implements ContactsDataRepositoryModel {
     }
 
     @Override
-    public void insert(@Nullable Integer type, @Nullable String phone_number, @Nullable String display_name, @Nullable Integer duration, @Nullable String email, @Nullable String photo_id, @Nullable Date date) {
+    public void insert(@Nullable Integer type, @Nullable String phone_number, @Nullable String display_name, @Nullable Integer duration, @Nullable String email, @Nullable String photo_id, @Nullable String date) {
         if (realm != null && !realm.isClosed()) {
         } else {
             realm = Realm.getDefaultInstance();

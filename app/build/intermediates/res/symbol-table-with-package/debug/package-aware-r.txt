@@ -1094,9 +1094,10 @@ id tvLocation
 id tvPassive
 id tvWifi
 id tv_date
+id tv_duration
 id tv_nickname
 id tv_phoneNumber
-id tv_time
+id tv_type
 id uniform
 id up
 id useLogo

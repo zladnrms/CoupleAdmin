@@ -4085,18 +4085,19 @@ public final class R {
     public static final int tvPassive=0x7f0800d6;
     public static final int tvWifi=0x7f0800d7;
     public static final int tv_date=0x7f0800d8;
-    public static final int tv_nickname=0x7f0800d9;
-    public static final int tv_phoneNumber=0x7f0800da;
-    public static final int tv_time=0x7f0800db;
-    public static final int uniform=0x7f0800dc;
-    public static final int up=0x7f0800dd;
-    public static final int useLogo=0x7f0800de;
-    public static final int view_offset_helper=0x7f0800df;
-    public static final int visible=0x7f0800e0;
-    public static final int wide=0x7f0800e1;
-    public static final int withText=0x7f0800e2;
-    public static final int wrap=0x7f0800e3;
-    public static final int wrap_content=0x7f0800e4;
+    public static final int tv_duration=0x7f0800d9;
+    public static final int tv_nickname=0x7f0800da;
+    public static final int tv_phoneNumber=0x7f0800db;
+    public static final int tv_type=0x7f0800dc;
+    public static final int uniform=0x7f0800dd;
+    public static final int up=0x7f0800de;
+    public static final int useLogo=0x7f0800df;
+    public static final int view_offset_helper=0x7f0800e0;
+    public static final int visible=0x7f0800e1;
+    public static final int wide=0x7f0800e2;
+    public static final int withText=0x7f0800e3;
+    public static final int wrap=0x7f0800e4;
+    public static final int wrap_content=0x7f0800e5;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;

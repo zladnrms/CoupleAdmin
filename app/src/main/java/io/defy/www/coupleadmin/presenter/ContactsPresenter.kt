@@ -44,8 +44,8 @@ class ContactsPresenter : ContactsContract.Presenter {
             val name : String? = cursor.getString(cursor.getColumnIndex(CallLog.Calls.CACHED_NAME)) //이름
             val phoneNumber : String? = cursor.getString(cursor.getColumnIndex(CallLog.Calls.NUMBER)) //전화번호
             val duration : Int? = cursor.getString(cursor.getColumnIndex(CallLog.Calls.DURATION)).toInt() //통화시간 ( 초단위 )
-            //val date : String? =  stringToDate(timeToString(cursor.getLong(cursor.getColumnIndex(CallLog.Calls.DATE)))) //날짜
-            val date : Date? =  stringToDate(timeToString(cursor.getLong(cursor.getColumnIndex(CallLog.Calls.DATE)))) //날짜
+            val date : String? =  timeToString(cursor.getLong(cursor.getColumnIndex(CallLog.Calls.DATE))) //날짜
+            //val date : Date? =  stringToDate(timeToString(cursor.getLong(cursor.getColumnIndex(CallLog.Calls.DATE)))) //날짜
 
             ifNotNull(repo, type, duration) { repo, type, duration ->
                 repo.insert(type.toInt(), phoneNumber, name, duration, null,null, date)

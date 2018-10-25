@@ -44,8 +44,8 @@ class MainActivity : AppCompatActivity() {
         unregisterReceiver(receiver)
 
         if (serviceIntent != null) {
-            stopService(serviceIntent);
-            serviceIntent = null;
+            stopService(serviceIntent)
+            serviceIntent = null
         }
     }
 
